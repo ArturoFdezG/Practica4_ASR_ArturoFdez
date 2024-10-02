@@ -79,3 +79,37 @@ provider "google" {
 terraform destroy
 ```
 Esto eliminará todas las instancias de VM y las reglas de firewall asociadas creadas por Terraform.
+
+## Progreso y Resultados
+
+A continuación, se incluirán imágenes mostrando el éxito en la ejecución del `terraform apply` y la conexión SSH a la instancia de VM:
+
+![image](https://github.com/user-attachments/assets/8b0826bf-76e2-4930-bdbf-5edcaf369aa9)
+![image](https://github.com/user-attachments/assets/136a93ef-fd82-4d8d-b963-6fe9a8cca772)
+![image](https://github.com/user-attachments/assets/d29b74ab-7ad9-4fc7-a194-18a181b6ee28)
+![image](https://github.com/user-attachments/assets/d6307872-38a9-4edc-b8a5-a97a7739dfb7)
+![image](https://github.com/user-attachments/assets/25e849f7-6d55-4b53-8931-b892ba7eeb50)
+![image](https://github.com/user-attachments/assets/3b965dbf-1be5-4500-beee-027e81aaacb9)
+![image](https://github.com/user-attachments/assets/fca94587-7d00-4eb6-8d49-00741bd05b54)
+![image](https://github.com/user-attachments/assets/9006f29d-4e3e-497e-a8e3-8ae5848cc570)
+![image](https://github.com/user-attachments/assets/55b8c996-9c8c-480c-b465-48722e386a19)
+![image](https://github.com/user-attachments/assets/1eae87f9-6a4e-427c-855d-b49bbb67552e)
+![image](https://github.com/user-attachments/assets/49364aa3-39aa-4a4a-a173-424573bd3b8d)
+![image](https://github.com/user-attachments/assets/71736ff9-4129-49a5-b47a-3830f7f8e22a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Referencias
+
+- [Documentación de Terraform para Google Cloud](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
+- [Guía de uso de Google Cloud Compute Engine](https://cloud.google.com/compute/docs)
