@@ -15,7 +15,12 @@ $ tree
 
 4 directories, 3 files
 
+
 ### Descripción del contenido
+
+
+
+
 
 - **main.yml**: Este es el archivo principal del playbook de Ansible. Aquí se definen todas las tareas para la creación de la instancia de Compute Engine en Google Cloud, la configuración de reglas de firewall y el despliegue de un servidor HTTP con una página HTML personalizada.
   
