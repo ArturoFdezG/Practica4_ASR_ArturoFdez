@@ -22,6 +22,9 @@ Este directorio contiene la configuración de Terraform para desplegar una insta
 ```bash
 terraform init
 ```
+![image](https://github.com/user-attachments/assets/d56f54fb-8ba8-4d26-aa3d-e7c909099c85)
+
+
 ## Planificar la infraestructura:
 
 Revisa los recursos que Terraform va a crear o modificar en tu proyecto de GCP antes de aplicar los cambios. Terraform mostrará un resumen de las acciones que va a tomar.
@@ -29,6 +32,8 @@ Revisa los recursos que Terraform va a crear o modificar en tu proyecto de GCP a
 ```bash
 terraform plan
 ```
+![image](https://github.com/user-attachments/assets/9401f420-cd31-4001-8373-4b201f5b640a)
+![image](https://github.com/user-attachments/assets/5e27adf0-967d-43ad-89a7-143ba323b725)
 
 ## Aplicar los cambios:
 
@@ -37,6 +42,7 @@ Ejecuta el siguiente comando para desplegar los recursos especificados en main.t
 ```bash
 terraform apply
 ```
+![image](https://github.com/user-attachments/assets/84a9ebae-8d16-4b03-a5b7-ae07e7775a2f)
 
 Terraform te pedirá confirmación antes de proceder. Escribe yes cuando te lo solicite.
 
@@ -47,6 +53,7 @@ Una vez que se complete el despliegue, puedes verificar los recursos creados en 
 ```bash
 terraform show
 ```
+![image](https://github.com/user-attachments/assets/a855ef71-b5da-40ad-a24d-a5b4c87fb557)
 
 ## Conectarse a la máquina por SSH
 
@@ -63,6 +70,8 @@ En este comando:
 
 Asegúrate de usar el ID correcto del **service account** y la ruta a tu clave privada.
 
+![image](https://github.com/user-attachments/assets/bfb7da26-1552-4b4a-91cb-2fb18943b27a)
+
 ## Instalar Apache en la máquina virtual
 
 Una vez conectado a la máquina por SSH, el próximo paso es instalar el servidor web **Apache**. Ejecuta los siguientes comandos para instalarlo y configurarlo:
@@ -72,6 +81,7 @@ Una vez conectado a la máquina por SSH, el próximo paso es instalar el servido
 ```bash
 sudo yum install httpd -y
 ```
+![image](https://github.com/user-attachments/assets/fe90692a-c49d-4b5e-9a8f-3707f5461549)
 
 ### Habilitar y arrancar el servicio de Apache:
 
@@ -81,6 +91,7 @@ Para habilitar Apache para que se inicie automáticamente y arrancarlo de inmedi
 sudo systemctl enable httpd
 sudo systemctl start httpd
 ```
+![image](https://github.com/user-attachments/assets/3f971184-3115-4b86-850c-e2a435fe5b79)
 
 Después de ejecutar estos comandos, Apache debería estar funcionando en tu máquina virtual y deberías poder acceder a ella desde un navegador usando la dirección IP pública de la VM.
 
@@ -121,23 +132,12 @@ Esto eliminará todas las instancias de VM y las reglas de firewall asociadas cr
 
 A continuación, se incluirán imágenes mostrando el éxito en la ejecución del `terraform apply` y la conexión SSH a la instancia de VM:
 
-![image](https://github.com/user-attachments/assets/8b0826bf-76e2-4930-bdbf-5edcaf369aa9)
-![image](https://github.com/user-attachments/assets/136a93ef-fd82-4d8d-b963-6fe9a8cca772)
-![image](https://github.com/user-attachments/assets/d29b74ab-7ad9-4fc7-a194-18a181b6ee28)
-![image](https://github.com/user-attachments/assets/d6307872-38a9-4edc-b8a5-a97a7739dfb7)
-![image](https://github.com/user-attachments/assets/25e849f7-6d55-4b53-8931-b892ba7eeb50)
-![image](https://github.com/user-attachments/assets/3b965dbf-1be5-4500-beee-027e81aaacb9)
-![image](https://github.com/user-attachments/assets/fca94587-7d00-4eb6-8d49-00741bd05b54)
-![image](https://github.com/user-attachments/assets/9006f29d-4e3e-497e-a8e3-8ae5848cc570)
-![image](https://github.com/user-attachments/assets/55b8c996-9c8c-480c-b465-48722e386a19)
-![image](https://github.com/user-attachments/assets/1eae87f9-6a4e-427c-855d-b49bbb67552e)
-![image](https://github.com/user-attachments/assets/49364aa3-39aa-4a4a-a173-424573bd3b8d)
-![image](https://github.com/user-attachments/assets/71736ff9-4129-49a5-b47a-3830f7f8e22a)
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/2d01d9ff-b389-48f2-a1a1-94f852fd1046)
+![image](https://github.com/user-attachments/assets/f832e633-712d-48e7-972a-2cc7f9bd593d)
+![image](https://github.com/user-attachments/assets/f12be433-f621-41bd-b3e9-17469d0ac893)
+### ÉXITO!
+![image](https://github.com/user-attachments/assets/37821885-19fa-47b3-a159-ad74eafcd18d)
+![image](https://github.com/user-attachments/assets/b9e3cd6c-0b84-4960-b161-550c29f927f4)
 
 
 
