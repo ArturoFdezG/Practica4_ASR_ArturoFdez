@@ -48,6 +48,43 @@ Una vez que se complete el despliegue, puedes verificar los recursos creados en 
 terraform show
 ```
 
+## Conectarse a la máquina por SSH
+
+Una vez que la máquina virtual esté levantada, el siguiente paso es conectarse a ella utilizando SSH. Usa el siguiente comando para hacerlo:
+
+```bash
+ssh sa_107619536602385214076@35.241.220.75 -i /home/arturo/.ssh/ssh-key-terraform-sa
+```
+
+En este comando:
+
+- **sa_107619536602385214076** es el ID del **service account** asociado a la instancia en Google Cloud.
+- **/home/arturo/.ssh/ssh-key-terraform-sa** es la ruta a tu clave privada SSH.
+
+Asegúrate de usar el ID correcto del **service account** y la ruta a tu clave privada.
+
+## Instalar Apache en la máquina virtual
+
+Una vez conectado a la máquina por SSH, el próximo paso es instalar el servidor web **Apache**. Ejecuta los siguientes comandos para instalarlo y configurarlo:
+
+### Instalar Apache:
+
+```bash
+sudo yum install httpd -y
+```
+
+### Habilitar y arrancar el servicio de Apache:
+
+Para habilitar Apache para que se inicie automáticamente y arrancarlo de inmediato, ejecuta los siguientes comandos:
+
+```bash
+sudo systemctl enable httpd
+sudo systemctl start httpd
+```
+
+Después de ejecutar estos comandos, Apache debería estar funcionando en tu máquina virtual y deberías poder acceder a ella desde un navegador usando la dirección IP pública de la VM.
+
+
 ## Detalles del `main.tf`
 
 Este archivo incluye:
