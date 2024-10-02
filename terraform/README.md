@@ -70,15 +70,12 @@ provider "google" {
   credentials = file("/ruta/a/tu/credencial.json")
   ...
 }
+```
 
-## Claves SSH
-
-He generado las claves SSH para mi proyecto y las he incluido en una carpeta llamada `.ssh` dentro del repositorio. Estas claves serán necesarias para conectarse a las instancias de VM creadas.
-
-## Destruir la infraestructura
-
-Si deseas eliminar todos los recursos creados por Terraform, puedes usar el siguiente comando:
+- **Claves SSH**: He generado las claves SSH para mi proyecto y las he incluido en una carpeta llamada `.ssh` dentro del repositorio. Estas claves serán necesarias para conectarse a las instancias de VM creadas.
+- **Destruir la infraestructura**: Si deseas eliminar todos los recursos creados por Terraform, puedes usar el siguiente comando:
 
 ```bash
 terraform destroy
 ```
+Esto eliminará todas las instancias de VM y las reglas de firewall asociadas creadas por Terraform.
