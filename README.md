@@ -1,4 +1,4 @@
-# Practica4_ASR_ArturoFdez
+# Practica 4 ASR. Arturo Fernández García
 
 Este repositorio contiene los archivos necesarios para desplegar una máquina virtual en Google Cloud utilizando Ansible. La estructura que he incorporado en la carpeta "ansible" sigue el siguiente esquema:
 
