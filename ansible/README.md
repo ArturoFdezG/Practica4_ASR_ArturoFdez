@@ -1,4 +1,4 @@
-# Practica 4 ASR. Ansible part
+# Practica 4.1 ASR. Ansible Configuration for GCP
 
 Este repositorio contiene los archivos necesarios para desplegar una máquina virtual en Google Cloud utilizando Ansible. La estructura que he incorporado en la carpeta "ansible" sigue el siguiente esquema:
 
