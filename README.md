@@ -36,3 +36,16 @@ Una vez que hayas hecho los ajustes necesarios, puedes ejecutar el playbook con 
 
 ```bash
 ansible-playbook main.yml -u sa_106565994304844757361 --key-file /home/arturo/.ssh/ssh-key-ansible-sa
+
+### Asegúrate de cambiar `--key-file` a la ubicación correcta de tu clave SSH privada.
+
+### Carpeta con claves SSH
+
+He incluido una carpeta con las claves SSH utilizadas durante la configuración por si es necesario utilizarlas. Si decides usar tus propias claves, deberás asegurarte de que están correctamente añadidas a la instancia de Google Cloud.
+
+### Progreso y resultados
+
+A continuación, se incluirán imágenes mostrando el éxito en la ejecución del playbook en mi máquina local, desde la creación de la VM hasta el despliegue exitoso del servidor HTTP.
+
+*(Espacio reservado para imágenes de éxito del proceso)*
+
