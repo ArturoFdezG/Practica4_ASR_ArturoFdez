@@ -15,6 +15,7 @@ $ tree
 
 4 directories, 3 files
 
+```
 
 ### Descripción del contenido
 
