@@ -47,3 +47,26 @@ Una vez que se complete el despliegue, puedes verificar los recursos creados en 
 ```bash
 terraform show
 ```
+
+## Detalles del `main.tf`
+
+Este archivo incluye:
+
+- **Instancia de Compute Engine**: Se crea una máquina virtual con las siguientes características:
+  - Tipo de máquina: `e2-medium`
+  - Imagen: `CentOS 9`
+  - Etiquetas de red para habilitar tráfico HTTP y SSH
+
+- **Reglas de Firewall**:
+  - **allow-ssh**: Permite el tráfico en el puerto 22 (SSH) desde cualquier IP.
+  - **allow-http**: Permite el tráfico en el puerto 80 (HTTP) desde cualquier IP.
+
+## Consideraciones
+
+- **Cambios en el archivo de credenciales**: Si estás utilizando un archivo de credenciales diferente, asegúrate de actualizar la ruta en el archivo `main.tf`:
+
+```hcl
+provider "google" {
+  credentials = file("/ruta/a/tu/credencial.json")
+  ...
+}
