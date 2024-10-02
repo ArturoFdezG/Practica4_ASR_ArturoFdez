@@ -40,9 +40,10 @@ Este playbook está configurado específicamente para mi entorno en Google Cloud
 
 Una vez que hayas hecho los ajustes necesarios, puedes ejecutar el playbook con el siguiente comando:
 
-bash
+```bash
 ansible-playbook main.yml -u sa_106565994304844757361 --key-file /home/arturo/.ssh/ssh-key-ansible-sa
-bash
+```
+
 ### Asegúrate de cambiar --key-file a la ubicación correcta de tu clave SSH privada.
 
 ### Carpeta con claves SSH
