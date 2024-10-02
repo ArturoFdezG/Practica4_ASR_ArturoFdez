@@ -1,4 +1,4 @@
-# Terraform Configuration for GCP
+# Practica 4.2 ASR. Terraform Configuration for GCP
 
 Este directorio contiene la configuración de Terraform para desplegar una instancia de Google Compute Engine en Google Cloud Platform (GCP) utilizando el archivo `main.tf` y las credenciales proporcionadas en el archivo JSON.
 
