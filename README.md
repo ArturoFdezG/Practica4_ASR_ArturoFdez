@@ -36,9 +36,9 @@ Este playbook está configurado específicamente para mi entorno en Google Cloud
 #### Cambios necesarios:
 - **Nombre del proyecto de Google Cloud**: En el archivo main.yml, se encuentra la variable gcp_project, que debe ser cambiada a tu propio proyecto de Google Cloud.
   
-- **Rutas en el ordenador local**: En mi caso, las rutas apuntan a mi directorio local (/home/arturo/). Estas rutas deben ser actualizadas según tu propia configuración local.
+- **Rutas en el ordenador local**: En mi caso, las rutas apuntan a mi directorio local (/home/arturo/). Estas rutas deben ser actualizadas según tu propia configuración local. Afectan al campo del json y de las claves
 
-Una vez que hayas hecho los ajustes necesarios, puedes ejecutar el playbook con el siguiente comando:
+Una vez que hayas hecho los ajustes necesarios, puedes ejecutar el playbook con el siguiente comando (cambiando en el comando el ID del service account si cambia y la ruta a la clave privada):
 
 ```bash
 ansible-playbook main.yml -u sa_106565994304844757361 --key-file /home/arturo/.ssh/ssh-key-ansible-sa
@@ -54,4 +54,12 @@ He incluido una carpeta con las claves SSH utilizadas durante la configuración 
 
 A continuación, se incluirán imágenes mostrando el éxito en la ejecución del playbook en mi máquina local, desde la creación de la VM hasta el despliegue exitoso del servidor HTTP.
 
-*(Espacio reservado para imágenes de éxito del proceso)*
+![image](https://github.com/user-attachments/assets/3cab566d-8a38-40aa-b08d-03996a8e84d3)
+![image](https://github.com/user-attachments/assets/ba12dcda-8301-43a9-be7a-361497abdf80)
+![image](https://github.com/user-attachments/assets/fd85d44c-0374-4433-be48-84e2500177b1)
+![image](https://github.com/user-attachments/assets/fb5397a3-009e-46e5-a1bb-d972d9d3c1ed)
+![image](https://github.com/user-attachments/assets/c84bc310-9232-4b82-a3d6-375baa362ec3)
+
+
+
+
